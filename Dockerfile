@@ -18,4 +18,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN apt-get update && \
 apt-get install -y git build-essential curl wget software-properties-common vim screen
 
+# set utc+9
+RUN ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+
 ENTRYPOINT cron && rsyslogd && bash
