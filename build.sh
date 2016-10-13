@@ -1,2 +1,1 @@
-#!/bin/sh
-docker build --rm -t base-ubuntu14.04 .
+docker build -t xmlangel/base-ubuntu:12.04 .

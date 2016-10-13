@@ -1,1 +1,1 @@
-# base-ubuntu14.04
+# base-ubuntu:12.04
