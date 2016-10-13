@@ -18,4 +18,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN apt-get update
 RUN apt-get install -y vim curl wget tar screen python python-pip net-tools git build-essential software-properties-common rsyslog
 
+# set utc+9
+RUN ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+
 ENTRYPOINT cron && rsyslogd && bash
