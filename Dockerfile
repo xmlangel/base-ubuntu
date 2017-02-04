@@ -17,5 +17,3 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 # Install dependencies
 RUN apt-get update && \
 apt-get install -y git build-essential curl wget software-properties-common vim screen
-
-RUN cron && rsyslogd
