@@ -15,5 +15,50 @@ RUN sed -i 's/security.archive.ubuntu.com/ftp.daum.net/g' /etc/apt/sources.list
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 # Install dependencies
-RUN apt-get update && \
-apt-get install -y git build-essential curl wget software-properties-common vim screen
+RUN apt-get update && apt-get install -y --no-install-recommends \
+                autoconf \
+                automake \
+                bzip2 \
+                file \
+                g++ \
+                gcc \
+                imagemagick \
+                libbz2-dev \
+                libc6-dev \
+                libcurl4-openssl-dev \
+                libdb-dev \
+                libevent-dev \
+                libffi-dev \
+                libgdbm-dev \
+                libgeoip-dev \
+                libglib2.0-dev \
+                libjpeg-dev \
+                libkrb5-dev \
+                liblzma-dev \
+                libmagickcore-dev \
+                libmagickwand-dev \
+                libncurses-dev \
+                libpng-dev \
+                libpq-dev \
+                libreadline-dev \
+                libsqlite3-dev \
+                libssl-dev \
+                libtool \
+                libwebp-dev \
+                libxml2-dev \
+                libxslt-dev \
+                libyaml-dev \
+                make \
+                patch \
+                xz-utils \
+                zlib1g-dev \
+                tcl \
+                tk \
+                git \
+                build-essential \
+                curl \
+                wget \
+                software-properties-common \
+                vim \
+                screen \
+                && rm -rf /var/lib/apt/lists/*
