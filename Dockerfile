@@ -64,4 +64,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
                 software-properties-common \
                 vim \
                 screen \
+                net-tools \
                 && rm -rf /var/lib/apt/lists/*
