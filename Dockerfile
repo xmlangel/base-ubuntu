@@ -2,6 +2,9 @@ FROM ubuntu:16.04
 
 MAINTAINER Kwangmyung Kim <kwangmyung.kim@gmail.com>
 
+RUN apt-get clean && apt-get update
+RUN apt-get install locales
+
 # Set locales
 RUN locale-gen en_GB.UTF-8
 ENV LANG en_GB.UTF-8
