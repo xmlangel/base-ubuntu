@@ -66,4 +66,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
                 screen \
                 net-tools \
                 sudo \
+                sysstat \
                 && rm -rf /var/lib/apt/lists/*
