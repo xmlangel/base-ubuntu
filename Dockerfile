@@ -67,4 +67,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
                 net-tools \
                 sudo \
                 sysstat \
+                telnet \
+                htop \
+                zsh \
                 && rm -rf /var/lib/apt/lists/*
