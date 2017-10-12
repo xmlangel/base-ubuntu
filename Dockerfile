@@ -13,6 +13,7 @@ ENV LC_CTYPE en_GB.UTF-8
 # Set Korea source.list
 RUN sed -i 's/archive.ubuntu.com/ftp.daum.net/g' /etc/apt/sources.list
 RUN sed -i 's/security.archive.ubuntu.com/ftp.daum.net/g' /etc/apt/sources.list
+RUN sed -i 's/security.ubuntu.com/ftp.daum.net/g' /etc/apt/sources.list
 
 # Fix sh
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
