@@ -71,4 +71,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
                 telnet \
                 htop \
                 zsh \
+                iputils-ping \
                 && rm -rf /var/lib/apt/lists/*
